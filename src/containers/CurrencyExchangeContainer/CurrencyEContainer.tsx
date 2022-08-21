@@ -1,6 +1,6 @@
 import React from 'react';
 import CurrencyExchange from '../../components/CurrencyExchange/CurrencyExchange';
-import {CurrencyState, CurrencyType} from '../../redux/currencyReducer';
+import {CurrencyState} from '../../redux/currencyReducer';
 import {Dispatch} from 'redux';
 import {
     ChangeActionAC,
@@ -44,5 +44,6 @@ const mapDispatchToProps = (dispatch: Dispatch): MapDispatchPropsType => {
 };
 
 const CurrencyEContainer = connect(mapStateToProps, mapDispatchToProps)(CurrencyExchange)
+
 export default CurrencyEContainer
 
