@@ -23,6 +23,8 @@ type MapDispatchPropsType = {
 
 export type CurrencyExchangeType = MapStatePropsType & MapDispatchPropsType
 
+
+
 const mapStateToProps = (state: IGlobalState): MapStatePropsType => {
     return {
         currency: state.currency
@@ -43,7 +45,7 @@ const mapDispatchToProps = (dispatch: Dispatch): MapDispatchPropsType => {
     };
 };
 
-const CurrencyEContainer = connect(mapStateToProps, mapDispatchToProps)(CurrencyExchange)
+const CurrencyExchangeContainer = connect(mapStateToProps, mapDispatchToProps)(CurrencyExchange)
 
-export default CurrencyEContainer
+export default CurrencyExchangeContainer
 

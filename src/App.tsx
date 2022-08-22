@@ -10,9 +10,26 @@ import Lesson1 from './lessons/lesson1/lesson1';
 // import './lessons/lesson8/lesson8';
 
 function App() {
+
+    function curry(f:(a:number, b:number)=>void) {
+        return function(a:number) {
+            return function(b:number) {
+                return f(a, b);
+            };
+        };
+    }
+
+    function sum(a:number, b:number) {
+        return a + b;
+    }
+
+    let curriedSum = curry(sum);
+
+    console.log(curriedSum(3)(6))
+
     return (
         <div className="container">
-            <Lesson1 />
+            {/*<Lesson1 />*/}
             {/*<Lesson3 />*/}
             {/*<Lesson4 />*/}
         </div>

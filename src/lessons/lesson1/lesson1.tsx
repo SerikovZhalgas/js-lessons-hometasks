@@ -1,5 +1,5 @@
 import React from 'react';
-import CurrencyEContainer from "../../containers/CurrencyExchangeContainer/CurrencyEContainer";
+import CurrencyExchangeContainer from "../../containers/CurrencyExchangeContainer/CurrencyEContainer";
 
 // Redux
 // https://tproger.ru/translations/redux-for-beginners/
@@ -22,7 +22,7 @@ import CurrencyEContainer from "../../containers/CurrencyExchangeContainer/Curre
 const Lesson1: React.FunctionComponent = () => {
     return (
     <>
-        <CurrencyEContainer />
+        <CurrencyExchangeContainer />
     </>
   );
 };
